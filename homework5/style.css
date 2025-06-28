@@ -15,11 +15,6 @@ background:#b8b8d6 ;
     border-radius: 20px;
     box-shadow: inset 0px 0px 7px 4px #674423;
 }
-.text {
-    display: block;
-    margin: 10px;
-    box-sizing: 20px ;
-}
 p, h1 {
     display: inline-block;
     margin: 15px 25px;
