@@ -1,0 +1,24 @@
+body {
+    background-color: #333;
+    color: aliceblue;
+    font-size: 25px;
+}
+/* ============================= */
+.block {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 15px;
+    min-height: 100px;
+    left: 50vw;
+    right: 50px;
+    bottom: 100px;
+}
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #e24747;
+    position: absolute;
+    left: 20%;
+    top: -50%;
+}
