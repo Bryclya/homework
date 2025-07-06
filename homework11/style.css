@@ -1,0 +1,42 @@
+body {
+    background: #1f1f1f;
+}
+/* ============================== */
+
+.block {
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background: #333;
+    font-size: 25px;
+    position: relative;
+}
+.text {
+    opacity: 0;
+    transition: .3s 2s;
+}
+.block:hover .text {
+    opacity: 1;
+    color: rgb(76, 230, 76);
+}
+
+.downloads {
+    color: beige;
+    opacity: 0;
+    height: 25px;
+    width: 1px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transition: width 2s .1s ease, opacity .5s ease;
+}
+.block:hover .downloads {
+    opacity: 1;
+    background-color: beige;
+    width: 500px;
+    height: 25px;
+}
