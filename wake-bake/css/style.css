@@ -256,7 +256,7 @@
     transform: rotate(-45deg);
 }
 .header__hero {
-    padding: 50px 0 140px;
+
 }
 /* ============================================== */
 .hero {
@@ -684,7 +684,7 @@
         padding: 60px 0 80px;
     }
     /* ================= */
-    .header-hero {
+    .hero {
         padding-bottom: 80px;
     }
     .hero__title {
