@@ -17,3 +17,33 @@
     }   
 
 })()
+
+const btn = document.querySelector ('.about__img-button')
+const close = document.querySelector ('.modal__cancel')
+const modal = document.querySelector ('.modal')
+const body = document.body
+
+btn.addEventListener ('click', (e) => {
+    e.preventDefault()
+    body.classList.add('body--opened-modal')
+})
+
+close.addEventListener ('click', (e) => {
+    e.preventDefault()
+    body.classList.remove('body--opened-modal')
+})
+
+modal.addEventListener ('click', (e) => {
+    e.preventDefault()
+    if ( e.target && e.target.classList.contains('modal') || e.target.classList.contains('modal__cancel')) {
+        body.classList.remove('body--opened-modal')
+    }
+})
+
+document.addEventListener ('keydown', (e)=>{
+    if (e.code === 'Escape' && body.classList.contains('body--opened-modal')) {
+        body.classList.remove('body--opened-modal')
+    }
+} )
+
+
