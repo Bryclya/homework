@@ -117,8 +117,8 @@ accordionLists.forEach(el => {
 
 // Слайдер-галерея
 
-const swiper = new Swiper('.gallery__slider', {
-
+new Swiper('.gallery__slider', {
+    
     spaceBetween: 15,
     slidesPerView: 1.5,
     
@@ -133,6 +133,7 @@ const swiper = new Swiper('.gallery__slider', {
         prevEl: '.gallery__prev',
     },
     
+    
     breakpoints: {
         601: {
             slidesPerView: 3,
@@ -142,6 +143,36 @@ const swiper = new Swiper('.gallery__slider', {
         },
         1101: {
             slidesPerView: 4,
+        },
+    }
+});
+
+// Слайдер-отзывы
+
+new Swiper('.testimonials__slider', {
+    
+    spaceBetween: 0,
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: '.testimonials__next',
+        prevEl: '.testimonials__prev',
+    },
+    
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    },
+
+    breakpoints: {
+        901: {
+            slidesPerView: 1.5,
+        },
+        1201: {
+            slidesPerView: 2.1,
         },
     }
 });
