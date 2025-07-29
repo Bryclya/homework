@@ -97,6 +97,7 @@ accordionLists.forEach(el => {
         const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
         const accordionControl = e.target.closest('.accordion-list__control');
         if (!accordionControl) return
+        e.preventDefault()
         const accordionItem = accordionControl.parentElement;
         const accordionContent = accordionControl.nextElementSibling;
 
