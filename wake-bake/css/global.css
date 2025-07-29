@@ -1,9 +1,11 @@
 :root {
 	--general-text: #312c27;
 	--accent-text: #1f1711;
+	--accent-text-2: #ceaad0;
 	--general-bg: #fff9f4;
 	--accent-bg: #ffe0cb;
 	--accent-color: #ffa55c;
+	--input-color: #ac907a;
 }
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -100,7 +102,7 @@
 }
 .modal__cancel:hover path,
 .modal__cancel:hover rect {
-    stroke: #ac907a;
+    stroke: var(--input-color);
 }
 .modal__img {
     margin: -65px 0 15px 13px;
@@ -131,7 +133,7 @@
     top: 12px;
     left: 28px;
     font-size: 11px;
-    color: #ac907a;
+    color: var(--input-color);
 
     opacity: 0;
     visibility: hidden;
@@ -141,7 +143,7 @@
     display: block;
     width: 100%;
     background: #00000000;
-    border: 1px solid #ac907a;
+    border: 1px solid var(--input-color);
     border-radius: 100px;
     padding: 19px 42px 19px 28px;
     font-size: 16px;
@@ -151,14 +153,14 @@
     border-color: var(--accent-color);
 }
 .field__input::placeholder {
-    color: #ac907a;
+    color: var(--input-color);
     transition: all .4s;
 }
 .field__input:hover::placeholder {
     color: var(--accent-color);
 }
 .field__input:focus {
-    color: #ac907a;
+    color: var(--input-color);
     transition: all .4s;
     padding: 26px 42px 12px 28px;
 }
