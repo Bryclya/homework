@@ -5,7 +5,11 @@
 	--general-bg: #fff9f4;
 	--accent-bg: #ffe0cb;
 	--accent-color: #ffa55c;
-	--input-color: #ac907a;
+	--input-color: #ac907a; 
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
 }
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
