@@ -234,7 +234,7 @@ hr {
 }
 
 .burger {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 50px;
@@ -1516,6 +1516,9 @@ hr {
         transform: translateX(-100%);
         transition: all .4s;
     }
+    .burger {
+    display: flex;
+}
     .body--opened-menu .burger {
         position: fixed;
         z-index: 5;
