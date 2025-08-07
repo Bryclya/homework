@@ -1546,6 +1546,9 @@ hr {
         flex-direction: column;
         align-items: start;
     }
+    .body--opened-menu .header__logo {
+        display: none;
+    }
 
     /* ====================== */
     .opinion__img {
