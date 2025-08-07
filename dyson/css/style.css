@@ -2206,6 +2206,7 @@ hr {
     .button-more {
         font-size: 15px;
         padding: 8px 23px 8px 22px;
+        gap: 14px;
     }
 
     /* ============================ */
