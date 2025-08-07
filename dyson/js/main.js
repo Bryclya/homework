@@ -1,5 +1,20 @@
-//калькулятор корзины
+// бургер
 
+document.addEventListener ('click', burgerInit)
+function burgerInit (e) {
+    const burgerIcone = e.target.closest ('.burger')
+    const burgerNavLink = e.target.closest ('.nav-link')
+
+    if (!burgerIcone && !burgerNavLink) return
+
+    if (!document.body.classList.contains('body--opened-menu')) {
+        document.body.classList.add('body--opened-menu')
+    } else {
+        document.body.classList.remove('body--opened-menu')
+    }
+}
+
+//калькулятор корзины
 
 const subtract = document.querySelector('.offers__numders-subtract-icon');
 const subtractIcon = document.querySelector('.offers__numders-subtract');
@@ -43,15 +58,33 @@ const swiper = new Swiper('.offers__slider', {
     },
 }); 
 
+// модальное окно
+
+const modalBtn = document.querySelector('.testimonials__button')
+const modalBtnClose = document.querySelector('.modal')
+
+
+
+modalBtn.addEventListener ('click', openModal)
+function openModal (e) {
+    document.body.classList.toggle('body--modal-opened')
+}
+modalBtnClose.addEventListener ('click', (e) => {
+    if (e.target.closest('.modal__close') ||  e.target.classList.contains('modal')) {
+        document.body.classList.remove('body--modal-opened')
+    }
+})
+
 
 // Аккордеон
 
-const accordionLists = document.querySelectorAll('.accordion-list')
+const accordionLists = document.querySelectorAll ('.accordion-list')
 
 accordionLists.forEach (el => {
     el.addEventListener('click', (e) => {
         const accordionControl = e.target.closest('.accordion-list__control')
         if (!accordionControl) return
+        e.preventDefault()
         const accordionItem = accordionControl.parentElement
         const accordionContent = accordionControl.nextElementSibling
 

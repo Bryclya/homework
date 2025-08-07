@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -21,33 +21,35 @@
                         <img src="img/content/logo.png" alt="Логотип компани Dyson">
                     </a>
                 </div>
-                <ul class="nav">
-                    <li class="nav__item">
-                        <a class="nav-link" href="#">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav-link" href="#">
-                            Доставка и оплата
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav-link" href="#">
-                            Регистрация продукта
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav-link" href="#">
-                            Сервис
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav-link" href="#">
-                            Сертификаты и лицензии
-                        </a>
-                    </li>
-                </ul>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="#">
+                                Регистрация продукта
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="#">
+                                Сервис
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="#">
+                                Сертификаты и лицензии
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header__button">
                     <a href="#" class="header__link">
                         <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -473,7 +475,7 @@
                         14
                     </span>
                     <div class="offers__buttons">
-                        <div href="#" class="offers__btnbar">
+                        <div class="offers__btnbar">
                             <div class="offers__btn offers__btn--mobile">
                                 <a href="#" class="offers__btn-link">
                                     dyson стайлер для длинных волос
@@ -522,7 +524,7 @@
                                                 расческамия
                                             </h3>
                                             <div class="offers__grid-info">
-                                                <div class="offers__availability">
+                                                <div class="offers__availability ">
                                                     <div class="offers__availability-icon">
                                                     </div>
                                                     <span class="offers__availability-status">
@@ -1546,6 +1548,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
             </section>
             <section class="main__testimonials testimonials">
                 <div class="container">
@@ -1653,9 +1656,15 @@
                                 где-то сбоку. Мощность у фена хорошая, волосы сушит быстро
                             </p>
                             <div class="testimonials__photo">
-                                <img src="img/content/testimonials.jpg" alt="">
-                                <img src="img/content/testimonials.jpg" alt="">
-                                <img src="img/content/testimonials.jpg" alt="">
+                                <a data-fslightbox="gallery" href="img/content/testimonials.jpg">
+                                    <img src="img/content/testimonials.jpg" alt="">
+                                </a>
+                                <a data-fslightbox="gallery" href="img/content/testimonials.jpg">
+                                    <img src="img/content/testimonials.jpg" alt="">
+                                </a>
+                                <a data-fslightbox="gallery" href="img/content/testimonials.jpg">
+                                    <img src="img/content/testimonials.jpg" alt="">
+                                </a>
                             </div>
                             <div class="testimonials__more-photo">
                                 Смотреть все фото
@@ -1763,7 +1772,9 @@
                                 Фен очень понравился. Качественный, стильный: свою цену полностью оправдывает!
                             </p>
                             <div class="testimonials__photo">
-                                <img src="img/content/testimonials.jpg" alt="">
+                                <a data-fslightbox="gallery" href="img/content/testimonials.jpg">
+                                    <img src="img/content/testimonials.jpg" alt="">
+                                </a>
                             </div>
                             <div class="testimonials__more-photo">
                                 Смотреть все фото
@@ -1795,7 +1806,7 @@
                     <hr>
                     <ul class="accordion-list">
                         <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
+                            <a href="#" class="accordion-list__control">
                                 <h3 class="accordion-list__control-title">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос?
                                 </h3>
@@ -1807,7 +1818,7 @@
                                             fill="#111111" />
                                     </svg>
                                 </div>
-                            </button>
+                            </a>
                             <div class="accordion-list__content">
                                 <p class="accordion-list__text">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
@@ -1820,9 +1831,10 @@
                             </div>
                         </li>
                         <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
+                            <a href="#" class="accordion-list__control">
                                 <h3 class="accordion-list__control-title">
-                                    В рукоятку встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов?
+                                    В рукоятку встроен датчик температуры, благодаря которому она не поднимается выше
+                                    100 градусов?
                                 </h3>
                                 <div class="accordion-list__control-icon">
                                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
@@ -1832,7 +1844,7 @@
                                             fill="#111111" />
                                     </svg>
                                 </div>
-                            </button>
+                            </a>
                             <div class="accordion-list__content">
                                 <p class="accordion-list__text">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
@@ -1845,32 +1857,7 @@
                             </div>
                         </li>
                         <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
-                                <h3 class="accordion-list__control-title">
-                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос?
-                                </h3>
-                                <div class="accordion-list__control-icon">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M20 1C20 0.447715 19.5523 0 19 0C18.4477 0 18 0.447715 18 1V18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H18V37C18 37.5523 18.4477 38 19 38C19.5523 38 20 37.5523 20 37V20H37C37.5523 20 38 19.5523 38 19C38 18.4477 37.5523 18 37 18H20V1Z"
-                                            fill="#111111" />
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="accordion-list__content">
-                                <p class="accordion-list__text">
-                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
-                                    встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов.
-                                    В комплекте 5 насадок, которые подходят для укладки и сушки на разных режимах. Есть
-                                    практичный черный чехол, предназначенный для аккуратной перевозки и хранения.
-                                    Расчески можно использовать отдельно от девайса или во время сушки с целью
-                                    предотвратить запутывание.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
+                            <a href="#" class="accordion-list__control">
                                 <h3 class="accordion-list__control-title">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос?
                                 </h3>
@@ -1882,7 +1869,7 @@
                                             fill="#111111" />
                                     </svg>
                                 </div>
-                            </button>
+                            </a>
                             <div class="accordion-list__content">
                                 <p class="accordion-list__text">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
@@ -1895,32 +1882,7 @@
                             </div>
                         </li>
                         <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
-                                <h3 class="accordion-list__control-title">
-                                    В рукоятку встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов?
-                                </h3>
-                                <div class="accordion-list__control-icon">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M20 1C20 0.447715 19.5523 0 19 0C18.4477 0 18 0.447715 18 1V18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H18V37C18 37.5523 18.4477 38 19 38C19.5523 38 20 37.5523 20 37V20H37C37.5523 20 38 19.5523 38 19C38 18.4477 37.5523 18 37 18H20V1Z"
-                                            fill="#111111" />
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="accordion-list__content">
-                                <p class="accordion-list__text">
-                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
-                                    встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов.
-                                    В комплекте 5 насадок, которые подходят для укладки и сушки на разных режимах. Есть
-                                    практичный черный чехол, предназначенный для аккуратной перевозки и хранения.
-                                    Расчески можно использовать отдельно от девайса или во время сушки с целью
-                                    предотвратить запутывание.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-list__item">
-                            <button class="accordion-list__control" type="button">
+                            <a href="" class="accordion-list__control">
                                 <h3 class="accordion-list__control-title">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос?
                                 </h3>
@@ -1932,7 +1894,58 @@
                                             fill="#111111" />
                                     </svg>
                                 </div>
-                            </button>
+                            </a>
+                            <div class="accordion-list__content">
+                                <p class="accordion-list__text">
+                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
+                                    встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов.
+                                    В комплекте 5 насадок, которые подходят для укладки и сушки на разных режимах. Есть
+                                    практичный черный чехол, предназначенный для аккуратной перевозки и хранения.
+                                    Расчески можно использовать отдельно от девайса или во время сушки с целью
+                                    предотвратить запутывание.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <a href="#" class="accordion-list__control">
+                                <h3 class="accordion-list__control-title">
+                                    В рукоятку встроен датчик температуры, благодаря которому она не поднимается выше
+                                    100 градусов?
+                                </h3>
+                                <div class="accordion-list__control-icon">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 1C20 0.447715 19.5523 0 19 0C18.4477 0 18 0.447715 18 1V18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H18V37C18 37.5523 18.4477 38 19 38C19.5523 38 20 37.5523 20 37V20H37C37.5523 20 38 19.5523 38 19C38 18.4477 37.5523 18 37 18H20V1Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="accordion-list__content">
+                                <p class="accordion-list__text">
+                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
+                                    встроен датчик температуры, благодаря которому она не поднимается выше 100 градусов.
+                                    В комплекте 5 насадок, которые подходят для укладки и сушки на разных режимах. Есть
+                                    практичный черный чехол, предназначенный для аккуратной перевозки и хранения.
+                                    Расчески можно использовать отдельно от девайса или во время сушки с целью
+                                    предотвратить запутывание.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <a href="#" class="accordion-list__control">
+                                <h3 class="accordion-list__control-title">
+                                    Главное отличие фена Dyson в быстром и безопасном высушивании волос?
+                                </h3>
+                                <div class="accordion-list__control-icon">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 1C20 0.447715 19.5523 0 19 0C18.4477 0 18 0.447715 18 1V18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H18V37C18 37.5523 18.4477 38 19 38C19.5523 38 20 37.5523 20 37V20H37C37.5523 20 38 19.5523 38 19C38 18.4477 37.5523 18 37 18H20V1Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </div>
+                            </a>
                             <div class="accordion-list__content">
                                 <p class="accordion-list__text">
                                     Главное отличие фена Dyson в быстром и безопасном высушивании волос. В рукоятку
@@ -1945,6 +1958,69 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="main__news news">
+                <div class="container">
+                    <h2 class="news__title">
+                        Новости
+                    </h2>
+                    <div class="news__grid">
+                        <div class="news__grig-item">
+                            <div class="news__item-img">
+                                <img src="img/content/news.jpg" alt="">
+                            </div>
+                            <div class="news__item-date">
+                                21 декабря 2022
+                            </div>
+                            <h4 class="news__item-title">
+                                Есть ли безопасные выпрямители для волос
+                            </h4>
+                            <p class="news__item-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <div class="news__item-more">
+                                Читать далее
+                            </div>
+                        </div>
+                        <div class="news__grig-item">
+                            <div class="news__item-img">
+                                <img src="img/content/news.jpg" alt="">
+                            </div>
+                            <div class="news__item-date">
+                                21 декабря 2022
+                            </div>
+                            <h4 class="news__item-title">
+                                Есть ли безопасные выпрямители для волос
+                            </h4>
+                            <p class="news__item-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <div class="news__item-more">
+                                Читать далее
+                            </div>
+                        </div>
+                        <div class="news__grig-item news__grig-item--mobile">
+                            <div class="news__item-img">
+                                <img src="img/content/news.jpg" alt="">
+                            </div>
+                            <div class="news__item-date">
+                                21 декабря 2022
+                            </div>
+                            <h4 class="news__item-title">
+                                Есть ли безопасные выпрямители для волос
+                            </h4>
+                            <p class="news__item-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <div class="news__item-more">
+                                Читать далее
+                            </div>
+                        </div>
+                    </div>
                     <div class="button-wrapper">
                         <button class="button-more">
                             Показать еще
@@ -1958,12 +2034,266 @@
                     </div>
                 </div>
             </section>
+            <section class="main__contact contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__item">
+                            <h4 class="contact__title">
+                                Свяжитесь с нами
+                            </h4>
+                            <form class="contact__form">
+                                <input type="text" class="contact__input" placeholder="Ваше имя">
+                                <input type="text" class="contact__input" placeholder="Ваш номер телефона">
+                                <button class="contact__button" type="submit">
+                                    Оставить заявку
+                                </button>
+                            </form>
+                        </div>
+                        <div class="contact__item">
+                            <h4 class="contact__title">
+                                Подпишитесь на новости
+                            </h4>
+                            <form class="contact__form">
+                                <input type="text" class="contact__input" placeholder="Ваш e-mail">
+                                <button class="contact__button" type="submit">
+                                    Подписаться
+                                </button>
+                                <label class="contact__label-check">
+                                    <input type="checkbox" class="contact__check">
+                                    <span>Я ознакомлен(а) с политикой конфиденциальности и согласен(а) с обработкой
+                                        персональных данных</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <footer class="footer">
-
+        <div class="container">
+            <a href="" class="footer__logo">
+                <img src="img/content/logo.png" alt="Логотип компании Dyson">
+            </a>
+            <div class="footer__inner">
+                <h4 class="footer__title">
+                    О компании
+                </h4>
+                <div class="footer__col-item footer__col-shop">
+                    <h5 class="footer__col-title">
+                        Магазин
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Фены Dyson Supersonic
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Стайлеры Dyson Airwrap
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Выпрямители Dyson Corrale
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Пылесосы
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Климатическая техника
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Освещение
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Аксессуары
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-item footer__col-information">
+                    <h5 class="footer__col-title">
+                        Общая информация
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Гарантия
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Оплата товара
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Свяжитесь с нами
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                Договор оферты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-item footer__col-wrapp">
+                    <div class="footer__col-stocks">
+                        <h5 class="footer__col-title">
+                            Акции
+                        </h5>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    Подарочная коллекция
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    Эксклюзивные предложения
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-contact">
+                        <h5 class="footer__tel">
+                            Отдел логистики:
+                            <br>
+                            <a href="+79998004554" class="footer__col-number">
+                                +7(999)800-45-54
+                            </a>
+                        </h5>
+                        <div class="footer__socials">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.17357 19.6563C14.9894 17.1223 18.8672 15.4516 20.8071 14.6442C26.3475 12.3409 27.5047 11.9409 28.2489 11.926C28.5249 11.9207 28.7956 12.002 29.0229 12.1586C29.1824 12.2961 29.284 12.4888 29.3075 12.6981C29.3476 12.9584 29.3588 13.2223 29.341 13.4851C29.0415 16.6479 27.741 24.2925 27.0805 27.8256C26.8015 29.3139 26.2508 29.8218 25.7168 29.8721C24.5596 29.9781 23.6703 29.1056 22.554 28.3707C20.7978 27.2191 19.8061 26.5102 18.1019 25.3791C16.1317 24.0767 17.4098 23.3679 18.5317 22.2032C18.8257 21.8981 23.9271 17.2544 24.0275 16.8339C24.0408 16.7718 24.0392 16.7075 24.0231 16.6461C24.0069 16.5847 23.9766 16.528 23.9345 16.4804C23.8734 16.4423 23.8043 16.4189 23.7326 16.4121C23.6609 16.4053 23.5886 16.4153 23.5215 16.4414C23.3466 16.4798 20.5423 18.3335 15.1085 22.0023C14.3122 22.5493 13.5909 22.816 12.9447 22.8023C12.2322 22.7856 10.8629 22.3986 9.84333 22.0581C8.59496 21.6525 7.61078 21.4386 7.68892 20.7558C7.73481 20.3986 8.22969 20.0321 9.17357 19.6563Z"
+                                    fill="#111111" />
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                    fill="white" />
+                                <path
+                                    d="M20.733 27.3746C12.9786 27.3746 8.55812 22.0574 8.37207 13.209H12.2549C12.3832 19.702 15.2465 22.4536 17.5144 23.0211V13.209H21.1739V18.809C23.4065 18.569 25.7674 16.0183 26.56 13.209H30.2195C29.6093 16.6676 27.0567 19.2201 25.2428 20.2694C26.6615 20.974 27.9145 21.9716 28.919 23.1965C29.9235 24.4213 30.6566 25.8454 31.0697 27.3746H27.0437C26.1786 24.6806 24.0223 22.5969 21.1739 22.3141V27.3746H20.733Z"
+                                    fill="#111111" />
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_388_4872)">
+                                    <path
+                                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                        fill="white" />
+                                    <path
+                                        d="M29.866 14.9164C29.7481 14.4771 29.5167 14.0765 29.1951 13.7548C28.8734 13.4332 28.4728 13.2018 28.0335 13.0839C26.4186 12.6504 19.9349 12.6504 19.9349 12.6504C19.9349 12.6504 13.4511 12.6504 11.8344 13.0839C11.3956 13.2028 10.9955 13.4346 10.674 13.7561C10.3525 14.0776 10.1208 14.4776 10.0018 14.9164C9.56835 16.5332 9.56836 19.9062 9.56836 19.9062C9.56836 19.9062 9.56835 23.2792 10.0018 24.896C10.1208 25.3348 10.3525 25.7349 10.674 26.0563C10.9955 26.3778 11.3956 26.6096 11.8344 26.7285C13.4511 27.162 19.9349 27.162 19.9349 27.162C19.9349 27.162 26.4167 27.162 28.0335 26.7285C28.4728 26.6106 28.8734 26.3792 29.1951 26.0576C29.5167 25.7359 29.7481 25.3353 29.866 24.896C30.2995 23.2792 30.2995 19.9062 30.2995 19.9062C30.2995 19.9062 30.2995 16.5332 29.866 14.9164ZM17.8604 23.015V16.7974L23.2558 19.9062L17.8604 23.015Z"
+                                        fill="#111111" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_388_4872">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="footer__col-copy">
+                        Интернет-магазин dysmarket.ru, 2022 © Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="modal">
+        <div class="modal__window">
+            <h3 class="moodal-title">
+                Написать отзыв
+            </h3>
+            <p class="modal__text">
+                Оценка
+            </p>
+            <div class="modal__stars">
+                <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.0489 0.927051C16.3483 0.00574017 17.6517 0.00574017 17.9511 0.927051L21.2658 11.1287C21.3996 11.5407 21.7836 11.8197 22.2168 11.8197H32.9434C33.9122 11.8197 34.3149 13.0593 33.5312 13.6287L24.8532 19.9336C24.5027 20.1883 24.3561 20.6396 24.4899 21.0517L27.8046 31.2533C28.104 32.1746 27.0495 32.9407 26.2658 32.3713L17.5878 26.0664C17.2373 25.8117 16.7627 25.8117 16.4122 26.0664L7.73419 32.3713C6.95048 32.9407 5.896 32.1746 6.19535 31.2533L9.51006 21.0517C9.64393 20.6396 9.49728 20.1883 9.14679 19.9336L0.468768 13.6287C-0.314945 13.0593 0.0878303 11.8197 1.05655 11.8197H11.7832C12.2164 11.8197 12.6004 11.5407 12.7342 11.1287L16.0489 0.927051Z"
+                        fill="#111111" />
+                </svg>
+                <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.0489 0.927051C16.3483 0.00574017 17.6517 0.00574017 17.9511 0.927051L21.2658 11.1287C21.3996 11.5407 21.7836 11.8197 22.2168 11.8197H32.9434C33.9122 11.8197 34.3149 13.0593 33.5312 13.6287L24.8532 19.9336C24.5027 20.1883 24.3561 20.6396 24.4899 21.0517L27.8046 31.2533C28.104 32.1746 27.0495 32.9407 26.2658 32.3713L17.5878 26.0664C17.2373 25.8117 16.7627 25.8117 16.4122 26.0664L7.73419 32.3713C6.95048 32.9407 5.896 32.1746 6.19535 31.2533L9.51006 21.0517C9.64393 20.6396 9.49728 20.1883 9.14679 19.9336L0.468768 13.6287C-0.314945 13.0593 0.0878303 11.8197 1.05655 11.8197H11.7832C12.2164 11.8197 12.6004 11.5407 12.7342 11.1287L16.0489 0.927051Z"
+                        fill="#111111" />
+                </svg>
+                <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.0489 0.927051C16.3483 0.00574017 17.6517 0.00574017 17.9511 0.927051L21.2658 11.1287C21.3996 11.5407 21.7836 11.8197 22.2168 11.8197H32.9434C33.9122 11.8197 34.3149 13.0593 33.5312 13.6287L24.8532 19.9336C24.5027 20.1883 24.3561 20.6396 24.4899 21.0517L27.8046 31.2533C28.104 32.1746 27.0495 32.9407 26.2658 32.3713L17.5878 26.0664C17.2373 25.8117 16.7627 25.8117 16.4122 26.0664L7.73419 32.3713C6.95048 32.9407 5.896 32.1746 6.19535 31.2533L9.51006 21.0517C9.64393 20.6396 9.49728 20.1883 9.14679 19.9336L0.468768 13.6287C-0.314945 13.0593 0.0878303 11.8197 1.05655 11.8197H11.7832C12.2164 11.8197 12.6004 11.5407 12.7342 11.1287L16.0489 0.927051Z"
+                        fill="#111111" />
+                </svg>
+                <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.0489 0.927051C16.3483 0.00574017 17.6517 0.00574017 17.9511 0.927051L21.2658 11.1287C21.3996 11.5407 21.7836 11.8197 22.2168 11.8197H32.9434C33.9122 11.8197 34.3149 13.0593 33.5312 13.6287L24.8532 19.9336C24.5027 20.1883 24.3561 20.6396 24.4899 21.0517L27.8046 31.2533C28.104 32.1746 27.0495 32.9407 26.2658 32.3713L17.5878 26.0664C17.2373 25.8117 16.7627 25.8117 16.4122 26.0664L7.73419 32.3713C6.95048 32.9407 5.896 32.1746 6.19535 31.2533L9.51006 21.0517C9.64393 20.6396 9.49728 20.1883 9.14679 19.9336L0.468768 13.6287C-0.314945 13.0593 0.0878303 11.8197 1.05655 11.8197H11.7832C12.2164 11.8197 12.6004 11.5407 12.7342 11.1287L16.0489 0.927051Z"
+                        fill="#111111" />
+                </svg>
+                <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.5244 1.08203C16.6741 0.621376 17.3259 0.621376 17.4756 1.08203L20.79 11.2832C20.9908 11.9012 21.567 12.3193 22.2168 12.3193H32.9434C33.4277 12.3193 33.6292 12.9399 33.2373 13.2246L24.5596 19.5293C24.0338 19.9113 23.8139 20.588 24.0146 21.2061L27.3291 31.4082C27.4784 31.8687 26.9513 32.2514 26.5596 31.9668L17.8818 25.6621C17.3561 25.2801 16.6439 25.2801 16.1182 25.6621L7.44043 31.9668C7.04868 32.2514 6.52162 31.8687 6.6709 31.4082L9.98535 21.2061C10.1861 20.588 9.96615 19.9113 9.44043 19.5293L0.762695 13.2246C0.370838 12.9399 0.572279 12.3193 1.05664 12.3193H11.7832C12.433 12.3193 13.0092 11.9012 13.21 11.2832L16.5244 1.08203Z"
+                        stroke="#111111" />
+                </svg>
+            </div>
+            <form class="modal__form">
+                <input type="text" class="modal__input-name" placeholder="Ваше имя">
+                <textarea rows="5" class="modal__input-testimonial" placeholder="Комментарий"></textarea>
+                <div class="modal__drag-and-drop">
+                    <p class="modal__download">
+                        Загрузить фото
+                    </p>
+                    <p class="modal__download-text">
+                        Нажмите кнопку “Загрузить фото” или перетащите фотографию в эту область
+                    </p>
+                </div>
+                <button class="modal__button">
+                    Отправить отзыв
+                </button>
+            </form>
+            <button class="modal__close">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.8464 1.71864C11.0589 1.50609 11.0589 1.16148 10.8464 0.948939C10.6339 0.736392 10.2892 0.736393 10.0767 0.948939L5.89771 5.12793L1.71846 0.948694C1.50592 0.736148 1.16131 0.736148 0.948767 0.948694C0.736221 1.16124 0.736221 1.50585 0.948767 1.71839L5.12801 5.89763L0.948638 10.077C0.736092 10.2895 0.736092 10.6342 0.948638 10.8467C1.16118 11.0592 1.50579 11.0592 1.71834 10.8467L5.89771 6.66733L10.0768 10.8465C10.2894 11.059 10.634 11.059 10.8465 10.8465C11.0591 10.6339 11.0591 10.2893 10.8465 10.0768L6.6674 5.89763L10.8464 1.71864Z"
+                        fill="#ABABAB" />
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
     <script src="js/main.js"></script>
 </body>
 
