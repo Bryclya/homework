@@ -1515,6 +1515,7 @@ hr {
         opacity: 0;
         transform: translateX(-100%);
         transition: all .4s;
+        max-width: 1000px;
     }
     .burger {
     display: flex;
@@ -1533,7 +1534,11 @@ hr {
         z-index: 4;
         transform: translateX(0);
     }
+    .nav__list {
+        display: none;
+    }
     .body--opened-menu .nav__list {
+        display: flex;
         font-size: 5vw;
         flex-direction: column;
         align-items: start;
