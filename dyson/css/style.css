@@ -1187,6 +1187,9 @@ hr {
 .accordion-list__control-icon path {
     transition: all .4s;
 }
+.accordion-list__control-icon svg {
+    transition: all .4s;
+}
 
 .accordion-list__content {
     max-height: 0;
@@ -1202,7 +1205,7 @@ hr {
     margin-bottom: 50px;
 }
 
-.accordion-list__item--opened .accordion-list__control-icon {
+.accordion-list__item--opened .accordion-list__control-icon svg {
     transform: rotate(45deg);
 }
 
