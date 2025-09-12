@@ -29,16 +29,16 @@ switch (true) {
 console.log (`скидка ${discount}%`);
 
 // Задача 3
-// let username = prompt ('введите имя')
-// let password = prompt ('введите пароль')
+let username = prompt ('введите имя')
+let password = prompt ('введите пароль')
 
-// if( username == 'admin' && password == 123456 ) {
-//     console.log ('доступ разрешён')
-// } else if (username == 'user' && password == 123456) {
-//     console.log ('Доступ разрешён')
-// } else {
-//     console.log ('Доступ запрещён')
-// }
+ if( username == 'admin' && password == 123456 ) {
+     console.log ('доступ разрешён')
+ } else if (username == 'user' && password == 123456) {
+     console.log ('Доступ разрешён')
+ } else {
+     console.log ('Доступ запрещён')
+}
 
 // Задача 4
 
