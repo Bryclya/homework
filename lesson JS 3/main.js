@@ -14,5 +14,5 @@ for (let i = 1; i <= number; i++) {
   factorial *= i;
 }
 
-// alert(`Факториал числа равен ${factorial}`);
+alert(`Факториал числа равен ${factorial}`);
 
