@@ -15,4 +15,3 @@ for (let i = 1; i <= number; i++) {
 }
 
 alert(`Факториал числа равен ${factorial}`);
-
